@@ -33,4 +33,3 @@ def Ceasar_Cypher_MakeTrans(Input_String,Shift):
 def Run():
     shift = int(input("What is the key:"))
     Ceasar_Cypher_MakeTrans(input("Input jumbled text: "), shift)
-    input()

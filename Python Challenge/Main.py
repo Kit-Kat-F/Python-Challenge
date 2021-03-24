@@ -1,4 +1,4 @@
-import Challenge2
+import Challenge3
 
-Challenge2.Run()
+Challenge3.Run()
 input()

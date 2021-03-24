@@ -4,13 +4,9 @@ My attempts at the challenges from www.pythonchallenge.com
 
 I am making each challenge its own module for ease of access
 
-
-
 Challenge 1:
 
 My first idea was to use the ord() function and do ascii level changes to convert back to chr, it worked but it wasn't very efficient. I then followed the recommendation to use the .maketrans function, then generalised it to any input shift.
-
-
 
 Challenge 2:
 

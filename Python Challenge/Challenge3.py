@@ -13,6 +13,8 @@ def Check_Space(Input_String):
 def String_Check(Input_String):
     lower = "048"
     upper = "123567"
+    if Check_Space(Input_String) == False:
+        return False
     for values in lower:
         if Check_Case(Input_String[int(values)]) == True:
             return False
@@ -23,13 +25,15 @@ def String_Check(Input_String):
 
 def Check_Loop(Input_String):
     String_To_Check = ""
+    Final_String = ""
     for i in range(0,len(str(Input_String))-9):
         if len(String_To_Check) < 9:
             String_To_Check += Input_String[i]
         else:
             String_To_Check = String_To_Check[1:] + Input_String[i]
             if String_Check(String_To_Check) == True:
-                return String_To_Check
+                Final_String += String_To_Check[4]
+    return Final_String
 
 
 def Run():
